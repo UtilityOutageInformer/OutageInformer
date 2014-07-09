@@ -1,0 +1,28 @@
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 32px;
+}
+.btn {
+  border-radius: 0;
+}
+
+.btn-primary {
+  background-color: #0a7dcd;
+  background-image: none;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #2491DA;
+}
+
+.btn-success {
+  background-color: #0cb11b;
+  background-image: none;
+}
+
+.btn-success:hover, .btn-success:focus {
+  background-color: #21C221;
+}

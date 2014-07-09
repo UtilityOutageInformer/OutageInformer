@@ -1,0 +1,33 @@
+!!!
+%html
+  %head
+    %title OutgaeInformer
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    %div.container
+      .row
+        .col-lg-10
+          %h1.logo
+            %a{href:"#"}
+        .col-lg-2.col-md-3
+          .share-buttons
+            %a(href="http://www.facebook.com/sharer.php?u=http://outage-informer.herokuapp.com/")
+              = image_tag("http://www.simplesharebuttons.com/images/somacro/facebook.png", alt: "share on facebook")
+
+            %a(href="http://twitter.com/share?url=http://outage-informer.herokuapp.com/")
+              = image_tag("http://www.simplesharebuttons.com/images/somacro/twitter.png", alt: "share on twitter")
+
+            %a(href="https://plus.google.com/share?url=http://outage-informer.herokuapp.com/")
+              = image_tag("http://www.simplesharebuttons.com/images/somacro/google.png", alt: "share on google")
+
+            %a(href="http://www.linkedin.com/shareArticle?mini=true&url=http://outage-informer.herokuapp.com")
+              = image_tag("http://www.simplesharebuttons.com/images/somacro/linkedin.png", alt: "Email it")
+      .row
+        .col-lg-12
+          = yield
+      .row
+        .col-lg-3
+          .logo-footer
+          .col-lg-6

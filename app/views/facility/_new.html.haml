@@ -1,0 +1,16 @@
+= form_for :service do |f|
+  .opinion-form
+    .row
+      .col-lg-12.col-md-12
+        = f.radio_button :subscribe, :true , checked: true
+        = label :service_subscribe, 'Yes'
+    .row
+      .col-lg-12.col-md-12
+        = f.radio_button :subscribe, :false
+        = label :service_subscribe, 'No'
+  .row
+    .col-lg-12.col-md-12
+      %input.btn.btn-primary.btn-lg{type:"submit", value:"SUBMIT"}
+  .row
+    .col-lg-12.col-md-12.success-message
+      = flash[:success]

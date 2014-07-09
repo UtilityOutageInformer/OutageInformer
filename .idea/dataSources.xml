@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="789142937">
+    <data-source source="LOCAL" name="Rails outgae-informer: development" uuid="c17b9264-00cf-48ea-81e6-c1bb3e7e4dc6">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/outage_informer_dev</jdbc-url>
+      <user-name>postgres</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails outgae-informer: test" uuid="5fa52399-3df9-45b6-9896-70963a2936ed">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/outage_informer_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails outgae-informer: production" uuid="ddd3618f-7adc-4000-8572-076d715d40b9">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/outage_informer_prod</jdbc-url>
+      <user-name>postgres</user-name>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

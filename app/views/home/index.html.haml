@@ -1,0 +1,73 @@
+.row
+  .col-lg-12
+    .banner
+      .row
+        .col-lg-6
+          %h2 Keep yourself informed
+      .row
+        .col-lg-6
+          %h3 about the service outages in your area
+    .intro
+      .row
+        .col-lg-12
+          .intro-container
+            %h4.intro-part-1 Powercuts and water outages are never a pleasant experience
+      .row
+        .col-lg-12
+          %h3 Wouldn't it be great
+          %h4.intro-part-2 if you got to know about these outages in advance!
+    .steps
+      .row
+        .col-lg-12
+          %h3 Here's how
+      .row
+        .col-lg-3.col-md-3.step-col-first
+          .step-icon.step-1
+          .step-text
+            %p The utility company announces an outage
+        .col-lg-1.col-md-1.step-arrows
+        .col-lg-3.col-md-3
+          .step-icon.step-2
+          .step-text
+            %p Outage Informer gets the announcement and broadcasts it to the subscribers
+        .col-lg-1.col-md-1.step-arrows
+        .col-lg-3.col-md-3
+          .step-icon.step-3
+          .step-text
+            %p The subscribers get notified about the outage well in advance
+    .info
+      .row
+        .col-lg-6
+          %h3 What's in it for us
+          %p Well, nothing, except for
+          %ul
+            %li A sense of building something that can help alleviatethe pain faced by billions in developing nations
+            %li Hopefully improve the services offered by utility companies to its consumers
+            %li Learn how to build open source software in a collaborative atmosphere
+        .col-lg-6
+          %h3 Tell us what you think
+          %p As a consumer of utility services, would you be interested in subscribing to this service?
+          = render 'facility/new'
+
+    .sign-up
+      .row
+        .col-lg-7.col-md-9
+          %h3.sign-up-header When can I get my paws on it?
+          %p.sign-up-part-1 We have just started building this and would appreciate all the hands we can get. If you're interested in helping out, then get yourself involved.
+          %p.sign-up-part-2 Let us know your email address and we'll inform you whenever we launch
+          %form{name:"notify",method:"post",action:"/notify"}
+            .subscribe-form
+              .form-group
+                %input.form-control.input-lg{type:"text", name:"email", placeholder:"abc@example.com"}
+              .form-group
+                %input.btn.btn-primary.btn-lg{type:"submit", value:"NOTIFY ME"}
+                .row
+                  .col-lg-12.col-md-12.success-message
+                    %label(for ="email_response")
+                  .col-lg-12.col-md-12.error-message
+                    %label(for ="email_validation")
+    .row
+      .col-lg-12.col-md-12
+        %p.sign-up-part-2 If you are interested in helping develop this solution then reach out to us on outage-informer@googlegroups.com
+
+
