@@ -6,7 +6,7 @@ class HomeController < ApplicationController
     @service = Service.new(service_params)
     @service.save
     flash[:success] = 'Thank you for the response.'
-    redirect_to root_path
+    # redirect_to root_path
   end
 
   private

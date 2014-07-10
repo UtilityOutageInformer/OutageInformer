@@ -1,6 +1,6 @@
 "use strict"
 
 
-@outageInformer.controller 'HomeController', ['$scope', ($scope) ->
-  # Notice how this controller body is empty
+@informer.controller 'HomeController', ['$scope', ($scope) ->
+  $scope.foo = 'bar'
 ]

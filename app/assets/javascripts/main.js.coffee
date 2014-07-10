@@ -1,11 +1,11 @@
 
 
-@informer = angular.module('outageInformer', [])
+@informer = angular.module('informer', [])
 
 @informer.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.
   otherwise({
-      templateUrl: '../views/home/index.html',
+      templateUrl: 'public/home/index.html',
       controller: 'HomeController'
     })
 ])

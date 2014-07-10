@@ -139,6 +139,8 @@ body {
 
 .success-message {
   color: green;
+  position: fixed;
+  z-index: 999;
 }
 
 .error-message {
