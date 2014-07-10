@@ -1,0 +1,146 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="banner">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2>Keep yourself informed {{foo}}</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>about the service outages in your area</h3>
+        </div>
+      </div>
+    </div>
+    <div class="intro">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="intro-container">
+            <h4 class="intro-part-1">Powercuts and water outages are never a pleasant experience</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Wouldn't it be great</h3>
+          <h4 class="intro-part-2">if you got to know about these outages in advance!</h4>
+        </div>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Here's how</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-3 step-col-first">
+          <div class="step-icon step-1"></div>
+          <div class="step-text">
+            <p>The utility company announces an outage</p>
+          </div>
+        </div>
+        <div class="col-lg-1 col-md-1 step-arrows"></div>
+        <div class="col-lg-3 col-md-3">
+          <div class="step-icon step-2"></div>
+          <div class="step-text">
+            <p>Outage Informer gets the announcement and broadcasts it to the subscribers</p>
+          </div>
+        </div>
+        <div class="col-lg-1 col-md-1 step-arrows"></div>
+        <div class="col-lg-3 col-md-3">
+          <div class="step-icon step-3"></div>
+          <div class="step-text">
+            <p>The subscribers get notified about the outage well in advance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>What's in it for us</h3>
+
+          <p>Well, nothing, except for</p>
+          <ul>
+            <li>A sense of building something that can help alleviatethe pain faced by billions in developing nations
+            </li>
+            <li>Hopefully improve the services offered by utility companies to its consumers</li>
+            <li>Learn how to build open source software in a collaborative atmosphere</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h3>Tell us what you think</h3>
+
+          <p>As a consumer of utility services, would you be interested in subscribing to this service?</p>
+          <!--<%= form_for :service do |f| %>-->
+            <form ng-controller="HomeController">
+              <div class="opinion-form">
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <%= f.radio_button :subscribe, :true, checked: true %>
+                    <%= label :service_subscribe, 'Yes' %>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12">
+                    <%= f.radio_button :subscribe, :false %>
+                    <%= label :service_subscribe, 'No' %>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <input class="btn btn-primary btn-lg" type="submit" value="SUBMIT" ng-click="submitResponse()" />
+                </div>
+              </div>
+              <!--<div class="row">-->
+                <!--<div class="col-lg-12 col-md-12 success-message">-->
+                  <!--<%= flash[:success] %>-->
+                <!--</div>-->
+              <!--</div>-->
+            </form>
+          <!--<% end %>-->
+        </div>
+      </div>
+    </div>
+    <div class="sign-up">
+      <div class="row">
+        <div class="col-lg-7 col-md-9">
+          <h3 class="sign-up-header">When can I get my paws on it?</h3>
+
+          <p class="sign-up-part-1">We have just started building this and would appreciate all the hands we can get. If
+            you're interested in helping out, then get yourself involved.</p>
+
+          <p class="sign-up-part-2">Let us know your email address and we'll inform you whenever we launch</p>
+
+          <form action="/notify" method="post" name="notify">
+            <div class="subscribe-form">
+              <div class="form-group">
+                <input class="form-control input-lg" name="email" placeholder="abc@example.com" type="text"></input>
+              </div>
+              <div class="form-group">
+                <input class="btn btn-primary btn-lg" type="submit" value="NOTIFY ME"></input>
+
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 success-message">
+                    <label>(for ="email_response")</label>
+                  </div>
+                  <div class="col-lg-12 col-md-12 error-message">
+                    <label>(for ="email_validation")</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12">
+        <p class="sign-up-part-2">If you are interested in helping develop this solution then reach out to us on
+          outage-informer@googlegroups.com</p>
+      </div>
+    </div>
+  </div>
+</div>
