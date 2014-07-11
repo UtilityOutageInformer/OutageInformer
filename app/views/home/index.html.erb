@@ -73,34 +73,34 @@
           <h3>Tell us what you think</h3>
 
           <p>As a consumer of utility services, would you be interested in subscribing to this service?</p>
-          <!--<%= form_for :service do |f| %>-->
-            <form ng-controller="HomeController">
-              <div class="opinion-form">
-                <div class="row">
-                  <div class="col-lg-12 col-md-12">
-                    <%= f.radio_button :subscribe, :true, checked: true %>
-                    <%= label :service_subscribe, 'Yes' %>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12 col-md-12">
-                    <%= f.radio_button :subscribe, :false %>
-                    <%= label :service_subscribe, 'No' %>
-                  </div>
+
+          <form ng-submit="submitResponse()">
+            <div class="opinion-form">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <input type="radio" id="subscribe_Yes" name="subscribe" value="Yes" ng-model="service.subscribe" checked>
+                  <label for="subscribe_Yes">Yes</label>
                 </div>
               </div>
               <div class="row">
                 <div class="col-lg-12 col-md-12">
-                  <input class="btn btn-primary btn-lg" type="submit" value="SUBMIT" ng-click="submitResponse()" />
+                  <input type="radio" id="subscribe_No" name="subscribe" value="No" ng-model="service.subscribe">
+                  <label for="subscribe_No">No</label>
+
                 </div>
               </div>
-              <!--<div class="row">-->
-                <!--<div class="col-lg-12 col-md-12 success-message">-->
-                  <!--<%= flash[:success] %>-->
-                <!--</div>-->
-              <!--</div>-->
-            </form>
-          <!--<% end %>-->
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <input class="btn btn-primary btn-lg" type="submit" value="SUBMIT"/>
+              </div>
+            </div>
+            <!--<div class="row">-->
+            <!--<div class="col-lg-12 col-md-12 success-message">-->
+            <!--<%= flash[:success] %>-->
+            <!--</div>-->
+            <!--</div>-->
+          </form>
         </div>
       </div>
     </div>

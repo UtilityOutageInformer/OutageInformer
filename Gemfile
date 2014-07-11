@@ -13,7 +13,7 @@ gem 'bootstrap-sass'
 gem 'angularjs-rails'
 gem 'angularjs-rails-resource'
 gem "twitter-bootstrap-rails"
-
+gem "pry-rails"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 

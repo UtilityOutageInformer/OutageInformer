@@ -3,6 +3,7 @@ class HomeController < ApplicationController
   end
 
   def create
+    binding.pry
     @service = Service.new(service_params)
     @service.save
     flash[:success] = 'Thank you for the response.'
