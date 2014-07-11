@@ -1,6 +1,5 @@
 
-
-@informer = angular.module('informer', [])
+@informer = angular.module('informer', ['ngResource','ngRoute'])
 
 @informer.config(['$routeProvider', ($routeProvider) ->
   $routeProvider.

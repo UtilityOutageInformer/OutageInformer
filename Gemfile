@@ -11,6 +11,7 @@ gem 'pg'
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass'
 gem 'angularjs-rails'
+gem 'angularjs-rails-resource'
 gem "twitter-bootstrap-rails"
 
 # Use Uglifier as compressor for JavaScript assets
